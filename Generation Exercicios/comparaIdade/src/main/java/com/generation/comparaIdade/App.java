@@ -10,19 +10,24 @@ public class App
 {
     public static void main( String[] args )
     {
+    	//criando o objeto
+    	Scanner reader = new Scanner(System.in);
     	
-    	
-int i,f,x = 0;
+    	//declaração de variável
+int idadeFilho, idadeMae, calculo = 0;
+
+		//pegando informações do usuario
         System.out.println( "Digite sua idade:" );
-        Scanner sn = new Scanner(System.in);
-        i = sn.nextInt();
         
-        System.out.println( "Digite a idade da sua mÃ£e:" );
-        f = sn.nextInt();
+        idadeFilho = reader.nextInt();
         
-        x = f - i;
+        System.out.println( "Digite a idade da sua mae:" );
+        idadeMae = reader.nextInt();
         
-        System.out.println("Minha mÃ£e Ã© "+ x +" mais velha do que eu!");
+        //calculo para a diferença entre as idades
+        calculo = idadeMae - idadeFilho;
+        
+        System.out.println("Minha mae é "+ calculo +" mais velha do que eu!");
    
 }
 }
